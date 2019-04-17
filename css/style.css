@@ -51,7 +51,7 @@ h3 {
 }
 
 /* header */
-
+/* 
 #masthead {
   position: fixed;
   z-index: 99;
@@ -94,7 +94,7 @@ nav a {
 
 nav a:first-child {
   border-left: 0 none;
-}
+} */
 
 /* footer */
 
@@ -214,4 +214,12 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
 }
