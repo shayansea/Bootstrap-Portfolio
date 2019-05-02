@@ -26,10 +26,12 @@
 
     <link rel="stylesheet" href="css/style.css">
   </head>
+
 <body>
 
   <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Shayan Anoushiravani</a>
+    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Shayan
+        Anoushiravani</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="index.html">About</a></li>
         <li><a href="portfolio.html">Projects</a></li>
@@ -42,41 +44,87 @@
     <section class="main-section">
       <h1>Portfolio</h1>
 
-      <div class="work">
-        <img src="images/technics-q-c-640-480-1.jpg" alt="Word Guess">
-
-        <h3>Word Guess</h3>
+      <div class="work" > 
+        <p> <a href="https://github.com/shayansea/burger"> </a> </p>
+        <h3> Burger Homework</h3>
       </div>
       <div class="work">
-        <img src="images/technics-q-c-640-480-2.jpg" alt="RPG Game">
-
-        <h3>RPG Game</h3>
+        
+        <!-- <img src="images/technics-q-c-640-480-2.jpg" alt="Bamazon Homework"> -->
+        <p> <a href="https://github.com/shayansea/bamazon"> </a> </p> 
+        <h3>Bamazon Homework</h3>
       </div>
-      <div class="work">
-        <img src="images/technics-q-c-640-480-5.jpg" alt="Trivia Game">
+      <div class="work work3">
 
-        <h3>Trivia Game</h3>
+        <!-- <img src="images/technics-q-c-640-480-5.jpg" alt="Trivia Quiz"> -->
+        <p> <a href="https://github.com/shayansea/TriviaGame"> </a> </p>
+        <h3>Trivia Quiz</h3>
       </div>
-      <div class="work">
-        <img src="images/technics-q-c-640-480-7.jpg" alt="Friend Finder">
-
+      <div class="work work3">
+        <!-- <img src="images/technics-q-c-640-480-7.jpg" alt="Friend Finder"> -->
+        <p> <a href="https://github.com/shayansea/Friend-finder2"> </a> </p>
         <h3>Friend Finder</h3>
       </div>
-      <div class="work">
-        <img src="images/technics-q-c-640-480-9.jpg" alt="Rock Paper Scissors">
-
-        <h3>Rock Paper Scissors</h3>
+      <div class="work work2">
+        <!-- <img src="images/technics-q-c-640-480-9.jpg" alt="Clicky Game"> -->
+        <p> <a href="https://github.com/shayansea/clicky-game"> </a> </p>
+        <h3>Clicky Game</h3>
       </div>
-
+      <div class="work work2">
+        <!-- <img src="images/technics-q-c-640-480-9.jpg" alt="Craigslist Scraper Site"> -->
+        <p> <a href="https://github.com/shayansea/scraper"> </a> </p>
+        <h3>Craigslist Scraper Site</h3>
+      </div>
     </section>
 
   </div>
 
   <footer>
     <div class="container">
-      Copyright &copy;
+      Copyright &copy; Shayan Anoushiravani
     </div>
   </footer>
 </body>
+
+<script>
+
+  $(".work").click(function ()  {
+    window.open($(this).find("a:first").attr("href"));
+    return false;
+});
+
+function randomColor() {
+    return Math.floor(Math.random() * 16777215).toString(16);
+  }
+  function randomColor2() {
+    return Math.floor(Math.random() * 16777215).toString(16);
+  }
+  function randomColor3() {
+    return Math.floor(Math.random() * 16777215).toString(16);
+  }
+
+  // var randomColor = Math.floor(Math.random()*16777215).toString(16);
+
+  $(".work").css({
+
+    backgroundColor: '#' + randomColor()
+
+  });
+
+  $(".work2").css({
+
+    backgroundColor: '#' + randomColor2()
+
+  });
+  $(".work3").css({
+
+    backgroundColor: '#' + randomColor2()
+
+  });
+
+// $("#colorcode").text("#" + randomColor);
+
+
+</script>
 
 </html>

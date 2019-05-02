@@ -51,7 +51,7 @@ h3 {
 }
 
 /* header */
-/* 
+/*=
 #masthead {
   position: fixed;
   z-index: 99;
@@ -140,10 +140,16 @@ h3, h2 {
   position: relative;
   float: left;
   width: 274px;
+  height: 200px;
   margin: 20px 0 25px;
   overflow: auto;
+
+  
 }
 
+.work:hover {
+  cursor: pointer;
+}
 .work:nth-child(even) {
   margin-right: 40px;
 }
